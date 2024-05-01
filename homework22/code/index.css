@@ -1,0 +1,32 @@
+td:hover {
+    background-color: bisque;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 300px;
+}
+.mainTable {
+    background-color: lightskyblue;
+    border-radius: 8px;
+}
+.mainTable:hover tr{
+    background-color: lightpink;
+}
+.randomPhoto {
+    border: 2px solid brown;
+    border-radius: 8px;
+}
+.btn {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    
+    color: limegreen;
+    border: 2px solid green;
+    border-radius: 8px;
+} 
