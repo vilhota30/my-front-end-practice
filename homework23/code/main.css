@@ -1,0 +1,78 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.btn-primary {
+    color: black;
+    background-color: orange;
+    padding: 8px 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.btn-primary:hover,
+.btn-primary:focus{
+    background-color: orangered;
+}
+
+.btn-secondary {
+    color: black;
+    background-color: yellow;
+    padding: 8px 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.btn-secondary:hover,
+.btn-secondary:focus{
+    background-color: chocolate;
+}
+.btn {
+    color: brown;
+    background-color: burlywood;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 6px;
+}
+.btn:hover{
+    background-color: cadetblue;
+}
+.toDoContainer {
+    background-color: rgb(163, 163, 234);
+    padding: 16px 16px;
+    border-radius: 8px;
+}
+.toDoTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toDoInput {
+    border: 2px solid blue;
+    border-radius: 6px;
+    background-color: rgb(154, 154, 240);
+    color: darkblue;
+    padding: 6px 8px;
+}
+.toDoBtn {
+    border: 2px solid blue;
+    background-color: rgb(154, 154, 240);
+    border-radius: 6px;
+    padding: 6px 8px;
+}
+.toDoBtnDelete {
+    color: white;
+    background-color: darkblue;
+    border-radius: 6px;
+    padding: 6px 6px;
+    margin-left: 5px;
+}
+.toDoBtn:hover{
+    color: white;
+    background-color: darkblue;
+}
