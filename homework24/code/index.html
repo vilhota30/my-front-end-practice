@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework21</title>
+    <link rel="stylesheet" href="./main.css"></link>
+</head>
+<body>
+    <div class="container">
+        <h2 class="formTitle">We would like to help you</h2>
+     <form autocomplete="on" class="form" name="form">
+        <label for="name">Name</label>
+         <input 
+           type="text"
+           plaseholder="name"
+           minlength="5"
+           maxlength="12"
+           id="name"
+           name="name"
+           required="true"
+         />
+        <span id="nameError" class="error"></span> 
+        <label for="email">Email</label>
+           <input 
+            type="email"
+            plaseholder="email"
+            id="email"
+            name="email"
+            required="true"
+           />
+           <span id="emailError" class="error"></span>
+        <label for="telNumber">Phone number</label>
+            <input 
+            type="text"
+            placeholder="+380"
+            id="telNumber"
+            name="telNumber"
+            required="true"
+            />
+            <span id="telNumberError" class="error"></span>
+        <label for="userText">Comment</label>
+            <textarea
+            type="text"
+            placeholder="text..."
+            id="userText"
+            name="userText"
+            minlength="5"
+            cols="35"
+            rows="5" 
+            wrap="virtual"
+            required="true"
+            ></textarea>
+            <span id="userTextError" class="error"></span>
+        <button id="btnSubmit" class="btnSubmit">Submit</button>
+     </form>
+    </div>
+    <script defer src="./index24.js"></script>
+</body>
+</html>
