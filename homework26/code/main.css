@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px 40px;
+    line-height: 1.2;
+    font-size: 18px;
+    background-color: rgb(119, 210, 241);
+    background-image: url('../assets/notebook.jpg');
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: rgb(12, 110, 143);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 850px;
+
+}
+
+.form {
+    background: #009688;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.form__input {
+    min-height: 25px;
+    padding: 10px;
+    width: 100%;
+
+    color: rgb(12, 110, 143);
+    font-weight: 600;
+    font-size: 14px;
+
+    border: 2px solid darkcyan;
+    border-radius: 8px;
+    outline-color: rgb(72, 134, 233);
+
+    margin-right: 4px;
+}
+.form__input:hover,
+.form__input:focus {
+    border: 2px solid darkcyan;
+}
+
+.form__btn {
+    color: whitesmoke;
+    background: rgb(43, 151, 187);
+    border: none;
+    cursor: pointer;
+    width: 100px;
+}
+
+.todo-item {
+    display: flex;
+    padding: 10px;
+    background: #5ed2c7;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.todo-item__description {
+    flex-grow: 1;
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(29, 92, 179);
+} 
+
+.todo-item--checked {
+    text-decoration: line-through;
+    color: darkblue;
+}
+
+ .todo-item__delete {
+    color: whitesmoke;
+    background: rgb(43, 151, 187);
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    padding: 4px;
+}
