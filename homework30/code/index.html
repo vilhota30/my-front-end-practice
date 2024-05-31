@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework30</title>
+    <link rel="stylesheet" href="./main.css"></link>
+</head>
+<body class="loaded">
+    <div class="preloader">
+        <span class="loader"></span>
+    </div>
+        <div class="container">
+            <div class="header">
+                <div class="logo-group">
+                   <img class="logo-img" src="../assets/logoicon.jpg" width="30px" height="30px" alt="sun"/>
+                    <p class="title">Your weather forecast</p>
+                </div>
+                <div class="select-group">
+                    <form id="weatherForm">
+                        <label for="city"></label>
+                        <select name="city" id="city">
+                            <option value="select">Select a city</option>
+                            <option value="kyiv">Kyiv</option>
+                            <option value="lviv">Lviv</option>
+                            <option value="odesa">Odesa</option>
+                            <option value="dnipro">Dnipro</option>
+                            <option value="mykolaiv">Mykolaiv</option>
+                            <option value="ternopil">Ternopil</option>
+                            <option value="ivano-frankivsk">Ivano-Frankivsk</option>
+                            <option value="uzhhorod">Uzhhorod</option>
+                        </select>
+                        <input type="submit" class="search-btn" value="Submit" />
+                    </form>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="info-group">
+                </div>
+                <button class="update-btn">Update</button>
+            </div>
+        </div>
+    <script defer src="index.js"></script>
+</body>
+</html>
