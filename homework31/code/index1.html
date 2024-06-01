@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div>
+    <h1>My To-Do List</h1>
+    <input type="text" id="value" placeholder="New List">
+    <button id="add" class="btn btn-primary">Add</button>
+    <ol id="mylist"></ol>
+  </div>
+  <!-- Bootstrap Modal -->
+  <div class="modal fade" id="taskModal" tabindex="-1" role="dialog" aria-labelledby="taskModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+          </button>
+          <h5 class="modal-title" id="taskModalLabel">Task Details</h5>
+        </div>
+        <div class="modal-body" id="taskDetails">
+          <!-- Task details will be displayed here -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!--JavaScript -->
+  <script>
+    $(document).ready(function() {
+      $("#add").on("click", function() {
+        var val = $("input").val();
+        if (val !== '') {
+          var elem = $("<li></li>").text(val);
+          $(elem).append("<button class='rem btn btn-danger'>X</button>");
+          $(elem).append("<button class='details btn btn-primary' data-toggle='modal' data-target='#taskModal'>Details</button>");
+          $("#mylist").append(elem);
+          $("input").val("");
+          $(".rem").on("click", function() {
+            $(this).parent().remove();
+          });
+          $(".details").on("click", function() {
+           var taskText = $(this).closest("li").contents().filter(function() {
+           return this.nodeType === 3; // фільтруємо тексові вузли
+           }).text();
+           $("#taskDetails").text(taskText);
+           });
+        }
+      });
+
+      $('#value').keypress(function(e) {
+        if (e.which == 13) {
+          $('#add').click();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
