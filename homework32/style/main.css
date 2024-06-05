@@ -1,0 +1,94 @@
+body,html{
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+  
+ * {
+    box-sizing: border-box;
+}
+  
+body{
+    /* background:url("../assets/mybackground.jpg"); */
+    background-color: #5591c4;
+    min-height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+div {
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+     justify-content:center;
+}
+  
+div h1 {
+      font-family:"Dancing Script", sans-serif;
+      font-size:50px;
+      font-weight: 600;
+      margin:15px 5px;
+      color: rgb(113, 21, 113);
+}
+  
+div input{
+    outline-color: pink;
+    padding:6px 30px 6px 6px;
+    border:2px solid rgb(245,130,145);
+    color: salmon;
+    font-weight: 600;
+    border-radius:5px;
+    margin:10px 0px;
+}
+div input:hover,
+div input:focus {
+    border: 2px solid rgb(227, 129, 145);
+    background-color: bisque; 
+}
+ol {
+    width: 400px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #5e0e50a3;;
+    border: 2px solid lightpink;
+    border-radius: 8px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin: 4px;
+
+    color: rgb(231, 92, 115);
+    font-weight: 700;
+}
+  
+.modal-header {
+    width: 300px;
+}
+
+.modal-title {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-content {
+    background-color: #5591c4;
+    border: 2px solid #104f63;
+}
+
+.btn-primary {
+    width: 120px;
+    margin-left: 5px;
+}
+
+.btn-danger {
+    margin-left: 5px;
+}
+
+.task-list {
+    width: 300px;
+    background-color: rgb(240, 195, 137);
+}
