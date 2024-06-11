@@ -1,0 +1,35 @@
+@import "bootstrap/scss/bootstrap";
+
+body {
+    color: $white;
+    background: $secondary;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+h1 {
+    color: $primary;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: whitesmoke;
+}
+
+p {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #3c9dbd;
+}
+
+img {
+    width: 800px;
+    height: 600px;
+    border-radius: 8px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
