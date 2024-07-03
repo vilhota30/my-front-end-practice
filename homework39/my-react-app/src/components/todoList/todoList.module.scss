@@ -1,0 +1,104 @@
+.todo-list {
+    min-width: 600px;
+    margin: 0 auto;
+
+    .title{
+        font-size: 28px;
+        font-weight: 800;
+        color: rgb(172, 217, 232);
+    }
+
+    .form-container {
+         background-color: rgba(12, 21, 147, 0.36);
+         width: 800px;
+         border-radius: 10px;
+         margin-left: auto;
+         margin-right: auto;
+
+        .input-container {
+            display: block;
+            width: 800px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+      
+            label {
+               color: lightblue;
+               font-weight: 600;
+               font-size: 18px;
+               margin-right: 6px;
+            }
+        
+            input {
+              flex: 1;
+              margin-top: 6px;
+              padding: 8px;
+              font-size: 1rem;
+              border: 1px solid #ccc;
+              border-radius: 4px 0 0 4px;
+            }
+              
+            .error-message {
+              display: block;
+              color: red;
+              font-size: 12px;
+          }
+        
+            button {
+              padding: 8px 12px;
+              margin-top: 6px;
+              background-color: #4CAF50;
+              color: white;
+              border: none;
+              border-radius: 0 4px 4px 0;
+              cursor: pointer;
+            }
+          }
+    }
+  
+    ul {
+     width:500px;
+     height: 300px;
+     margin-left: auto;
+     margin-right: auto;
+     background-color: rgba(12, 21, 147, 0.36);
+     border-radius: 10px;
+      padding: 5px;
+  
+      li {
+        display: flex;
+        color: lightblue;
+        font-size: 16px;
+        font-weight: 600;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0;
+        border-bottom: 1px solid #ddd;
+  
+        .buttons {
+          button {
+            background-color: rgb(65, 53, 144);
+            border: none;
+            cursor: pointer;
+  
+            &:hover {
+              color: wheat;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+.button-add {
+    width: 180px;
+    padding: 8px;
+    color: lightblue;
+    background-color: rgb(49, 172, 213);
+    border: 2px solid rgb(11, 98, 127);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+
+}
