@@ -1,0 +1,60 @@
+.app {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+h1 {
+  color: #71790a;
+  font-weight: 700;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: calc(100% - 22px);
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  color: mistyrose;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: rgba(140, 213, 67, 0.3);
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+p {
+  font-size: 18px;
+  color: #dce191;
+  font-weight: 700;
+}
+
+footer {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
