@@ -1,0 +1,22 @@
+.counter {
+    h1 {
+      margin-bottom: 20px;
+    }
+  
+    .buttons {
+      button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+  
