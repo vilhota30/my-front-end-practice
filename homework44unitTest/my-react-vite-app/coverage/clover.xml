@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1721836702492" clover="3.2.0">
+  <project timestamp="1721836702492" name="All files">
+    <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="2" methods="8" coveredmethods="8" elements="32" coveredelements="30" complexity="0" loc="20" ncloc="20" packages="2" files="2" classes="2"/>
+    <package name="mocks">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="fileMock.js" path="C:\Users\Yevh\OneDrive\Documents\GitHub\PracticeFrontEnd\homework44unitTest\my-react-vite-app\mocks\fileMock.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.TodoList">
+      <metrics statements="19" coveredstatements="19" conditionals="4" coveredconditionals="2" methods="8" coveredmethods="8"/>
+      <file name="TodoList.jsx" path="C:\Users\Yevh\OneDrive\Documents\GitHub\PracticeFrontEnd\homework44unitTest\my-react-vite-app\src\components\TodoList\TodoList.jsx">
+        <metrics statements="19" coveredstatements="19" conditionals="4" coveredconditionals="2" methods="8" coveredmethods="8"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="14" type="stmt"/>
+        <line num="8" count="14" type="stmt"/>
+        <line num="10" count="14" type="stmt"/>
+        <line num="11" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="21" count="14" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="26" count="14" type="stmt"/>
+        <line num="27" count="4" type="stmt"/>
+        <line num="30" count="14" type="stmt"/>
+        <line num="31" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="36" count="14" type="stmt"/>
+        <line num="50" count="4" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
